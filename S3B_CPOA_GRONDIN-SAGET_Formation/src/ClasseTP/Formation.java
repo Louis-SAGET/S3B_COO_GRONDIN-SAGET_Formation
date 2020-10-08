@@ -22,7 +22,7 @@ public class Formation {
 	 * @param id  le id
 	 * @param mat le mat
 	 */
-	public Formation(String id, Map<String, Integer> mat) {
+	public Formation(String id) {
 		this.identifiant = new String(id);
 		this.matieres = new HashMap<String, Integer>();
 	}
@@ -79,7 +79,7 @@ public class Formation {
 		if (this.matieres.containsKey(mat)) {
 			coef = this.matieres.get(mat);
 		} else {
-			coef = 0;
+			coef = -1;
 		}
 		return coef;
 	}
