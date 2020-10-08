@@ -16,7 +16,7 @@ public class Principale {
 		
 		scientifique.ajouterMatiere("Maths", 9);
 		scientifique.ajouterMatiere("SVT", 7);
-		scientifique.ajouterMatiere("Pysique", 7);
+		scientifique.ajouterMatiere("Physique", 7);
 		scientifique.ajouterMatiere("Sport", 2);
 		scientifique.ajouterMatiere("Anglais", 3);
 		
