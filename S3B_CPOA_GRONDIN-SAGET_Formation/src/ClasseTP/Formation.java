@@ -1,15 +1,16 @@
 package ClasseTP;
 
-import java.util.Map;
+import java.util.*;
 
 public class Formation {
 
 	private String identifiant;
 
-	private Map<String, Integer> matiere;
+	private Map<String, Integer> matieres;
 	
 	public Formation(String id, Map<String, Integer> mat ) {
-		// TODO Auto-generated constructor stub
+		this.identifiant = new String(id);
+		this.matieres = new HashMap<String, Integer>();
 	}
 
 	public String getIdentifiant() {
@@ -17,7 +18,29 @@ public class Formation {
 	}
 
 	public Map<String, Integer> getMatiere() {
-		return matiere;
+		return matieres;
+	}
+	
+	public void ajouterMatiere(String mat, int coef) {
+		if (!this.matieres.containsKey(mat)) {
+			this.matieres.put(mat,coef);
+		}
+	}
+	
+	public void supprimerMatiere(String mat) {
+		if (this.matieres.containsKey(mat)) {
+			this.matieres.remove(mat);
+		}
+	}
+	
+	public int connaitreCoefficient(String mat) {
+		int coef;
+		if (this.matieres.containsKey(mat)) {
+			coef = this.matieres.get(mat);
+		} else {
+			coef = 0;
+		}
+		return coef;
 	}
 
 }
