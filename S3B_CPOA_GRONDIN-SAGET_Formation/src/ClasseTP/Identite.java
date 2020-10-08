@@ -24,6 +24,11 @@ public class Identite {
 		this.prenom = p;
 	}
 
+	@Override
+	public String toString() {
+		return "Nom: "+nom+"\nPrenom: "+prenom+"\nNumero d'identification: "+nip;
+	}
+
 	/**
 	 * Recupere l'element nip.
 	 *

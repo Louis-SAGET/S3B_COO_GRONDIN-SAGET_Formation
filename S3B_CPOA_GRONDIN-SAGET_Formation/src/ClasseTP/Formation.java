@@ -68,11 +68,16 @@ public class Formation {
 		}
 	}
 
+	@Override
+	public String toString() {
+		return identifiant+"\nMatieres:"+matieres.keySet();
+	}
+
 	/**
 	 * Connaitre coefficient.
 	 *
 	 * @param mat la matiere
-	 * @return la valeur int
+	 * @return la valeur du coeff et -1 si la matiere n'existe pas
 	 */
 	public int connaitreCoefficient(String mat) {
 		int coef;
