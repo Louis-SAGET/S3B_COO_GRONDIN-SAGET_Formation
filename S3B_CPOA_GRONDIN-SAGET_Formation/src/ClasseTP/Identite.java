@@ -4,7 +4,7 @@
 package ClasseTP;
 
 /**
- * The Class Identite.
+ * La Class Identite.
  */
 public class Identite {
 

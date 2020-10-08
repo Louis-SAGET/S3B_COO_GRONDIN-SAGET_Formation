@@ -20,7 +20,6 @@ public class Formation {
 	 * Creer un nouvel objet formation.
 	 *
 	 * @param id  le id
-	 * @param mat le mat
 	 */
 	public Formation(String id) {
 		this.identifiant = new String(id);
@@ -68,6 +67,11 @@ public class Formation {
 		}
 	}
 
+	/**
+	 * To string.
+	 *
+	 * @return la valeur string
+	 */
 	@Override
 	public String toString() {
 		return identifiant+"\nMatieres:"+matieres.keySet();
