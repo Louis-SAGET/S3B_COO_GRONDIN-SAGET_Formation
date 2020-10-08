@@ -1,23 +1,52 @@
+/*
+ * @autor Grondin Florent, Saget Louis
+ */
 package ClasseTP;
 
+/**
+ * The Class Identite.
+ */
 public class Identite {
-	
-	private String nip,nom,prenom;
 
-	public Identite(String ip,String n,String p) {
-		this.nip=ip;
-		this.nom=n;
-		this.prenom=p;
+	/** Le prenom. */
+	private String nip, nom, prenom;
+
+	/**
+	 * Creer un nouvel objet identite.
+	 *
+	 * @param ip l'ip
+	 * @param n  le nom
+	 * @param p  le prenom
+	 */
+	public Identite(String ip, String n, String p) {
+		this.nip = ip;
+		this.nom = n;
+		this.prenom = p;
 	}
 
+	/**
+	 * Recupere l'element nip.
+	 *
+	 * @return l'element nip
+	 */
 	public String getNip() {
 		return nip;
 	}
 
+	/**
+	 * Recupere l'element nom.
+	 *
+	 * @return l'element nom
+	 */
 	public String getNom() {
 		return nom;
 	}
 
+	/**
+	 * Recupere l'element prenom.
+	 *
+	 * @return l'element prenom
+	 */
 	public String getPrenom() {
 		return prenom;
 	}
