@@ -102,6 +102,7 @@ public class Etudiant {
 	 */
 	public double calculerMoyenneMatiere(String mat) {
 		double somme = 0.0;
+		double moy;
 
 		ArrayList<Double> listeNote = null;
 		// test si la matiere est dans la formation
@@ -112,9 +113,12 @@ public class Etudiant {
 			for (Double ln : listeNote) {
 				somme += ln;
 			}
+			moy = Math.round((somme / listeNote.size()) * 100.0) / 100.0;
+		} else {
+			moy = -1;
 		}
 
-		return Math.round((somme / listeNote.size()) * 100.0) / 100.0;
+		return moy;
 	}
 
 	/**
