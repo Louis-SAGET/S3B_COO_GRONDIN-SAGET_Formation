@@ -97,7 +97,7 @@ public class Groupe {
 			int indice=i;
 			for (int j =i+1; j<lEtudiants.size();j++) {
 				Etudiant etuTemp = lEtudiants.get(j);
-				if (etuSelectionne.calculerMoyenneGenerale()<=etuTemp.calculerMoyenneGenerale()) {
+				if (etuSelectionne.calculerMoyenneGenerale()>=etuTemp.calculerMoyenneGenerale()) {
 					indice=j;
 					etuSelectionne=etuTemp;
 				}
